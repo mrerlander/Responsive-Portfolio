@@ -238,6 +238,40 @@ input[type=submit] {
   border: 0 none;
 }
 
+@media screen and (max-width: 980px) {
+  
+  #masthead {
+    width: 100vw;
+    padding-left: 2.5vw;
+  }
+
+  nav {
+    padding-right: 2.5vw;
+  }
+
+  .work {
+    width: 100%;
+  }
+
+  #main-container {
+    max-width: 95vw;
+  }
+
+  .main-section {
+    float: left;
+    width: 65%;
+    max-width: 65%;
+    padding: 30px;
+    margin: 0 0 40px;
+  }
+
+  .sidebar {
+    max-width: 32%;
+    padding: 10px;
+  }
+
+}
+
 @media screen and (max-width: 768px) {
   
   #masthead {
@@ -249,13 +283,14 @@ input[type=submit] {
     
   #logo {
     position: relative;
-    left: 15px;
+    left: 2.5vw;
   }
 
   nav {
     position: relative;
-    right: 15px;
+    right: 2.5vw;
   }
+
   #main-container {
     clear: both;
     padding-top: 0;
@@ -279,8 +314,13 @@ input[type=submit] {
   }
 
   .work {
+    float: right;
     width: 35vw;
-    margin: 25px;
+    margin: 10px;
+  }
+
+  .work:nth-child(even) {
+    float: left;
   }
 
   .sidebar {
@@ -299,6 +339,7 @@ input[type=submit] {
     margin-bottom: 10px;
     width: 100%;
     overflow: hidden;
+    padding: 0;
   }
 
   #logo {
@@ -336,6 +377,7 @@ input[type=submit] {
   .work {
     width: 100%;
     max-width: 100%;
+    margin: auto;
   }
   
 
