@@ -238,15 +238,73 @@ input[type=submit] {
   border: 0 none;
 }
 
+@media screen and (max-width: 768px) {
+  
+  #masthead {
+    position: relative;
+    margin-bottom: 10px;
+    max-width: 100%;
+    overflow: hidden;
+  }
+    
+  #logo {
+    position: relative;
+    left: 15px;
+  }
+
+  nav {
+    position: relative;
+    right: 15px;
+  }
+  #main-container {
+    clear: both;
+    padding-top: 0;
+    max-width: 95vw;
+    margin: auto;
+  }
+
+  .main-section {
+    clear: both;
+    float: none;
+    overflow: auto;
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto 10px;
+  }
+
+  #connect {
+    clear: both;
+    width: 100%
+  }
+
+  .work {
+    width: 35vw;
+    margin: 25px;
+  }
+
+  .sidebar {
+    float: none;
+    clear: both;
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+
 @media screen and (max-width: 640px) {
   
   #masthead {
     position: relative;
     margin-bottom: 10px;
+    width: 100%;
+    overflow: hidden;
   }
+
   #logo {
     width: 100%;
     clear: both;
+    left: 0;
   }
 
   nav {
@@ -254,8 +312,14 @@ input[type=submit] {
     width: 100%;
     clear: both;
     margin-bottom: 25px;
+    right: 0;
   }
-  
+
+  .auth-image {
+    float: none;
+    width: inherit;
+  }
+
   #main-container {
     width: 95%;
     clear: both;
@@ -266,10 +330,12 @@ input[type=submit] {
     text-align: center;
     width: 100%;
     margin-bottom: 10px;
+    max-width: 100%;
   }
 
   .work {
     width: 100%;
+    max-width: 100%;
   }
   
 
@@ -284,3 +350,4 @@ input[type=submit] {
     margin-bottom: 10px;
   }
 }
+
